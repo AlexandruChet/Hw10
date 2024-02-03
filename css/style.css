@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
 
-  header{
+  header body{
     font-family:'Raleway' ;
     color: #000;
   }
-  body{
-    font-family:'Roboto' ;
-  }
-
+:root{
+  --headline-text:#2F303A;
+  --text-color:#fff;
+  --p-color:#757575;
+}
 
 .header-logo {
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Roboto'; 
     width: 1600px;
 height: 80px;
 flex-shrink: 0;
@@ -24,7 +25,7 @@ letter-spacing: 0.78px;
 }
 
 .block-text {
-     color: #212121;
+     color: var(--headline-text);
     font-family: 'Roboto';
     text-align: center;
     font-size: 16px;
@@ -35,7 +36,7 @@ letter-spacing: 0.78px;
 }
 
 .block-button {
-    color: #FFF;
+    color: var(--text-color);
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -49,7 +50,7 @@ letter-spacing: 0.78px;
 
 .article-text {
 
-    color: #212121;
+    color: var(--headline-text);
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -59,8 +60,11 @@ letter-spacing: 0.78px;
     letter-spacing: 1.08px;
 }
 
-.main-team-text {
-    color: #757575;
+.headline-text
+
+
+.p-text {
+    color: var(--p-color) ;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -70,13 +74,13 @@ letter-spacing: 0.78px;
   letter-spacing: 0.48px;
 }
 
-.main-footer {
+.Basement {
   font-family: 'Roboto';
   width: 1600px;
 height: 252px;
 flex-shrink: 0;
-background: #2F303A;
-color: #FFF;
+background: var(--headline-text);
+color: var(--text-color);
 font-family: Raleway;
 font-size: 26px;
 font-style: normal;
